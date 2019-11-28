@@ -107,26 +107,35 @@
       <div class="btn-group mx-auto">
         <button class="btn btn-primary color-dark-blue" type="button" name="button" onclick="switchDiv('city-adress', 'vitoria')">Vitória</button>
         <button class="btn btn-primary color-dark-blue" type="button" name="button" onclick="switchDiv('city-adress', 'serra')">Serra</button>
+        <button class="btn btn-primary color-dark-blue" type="button" name="button" onclick="switchDiv('city-adress', 'guarapari')">Guarapari</button>
       </div>
 
       <div class="mx-auto mt-2">
         <div id="vitoria" class="city-adress">
           <p class="text-white text-center">Av.Vitória, 1047 - Romão - Virória - Cep 29041-405</p>
-          <p class="text-white text-center">Email: vitoriawagen@grupolider.com.br</p>
+          <p class="text-white text-center">Email: crm.vitoriawagen@grupolider.com.br</p>
             <p class="text-white text-center">Tel: (27) 3331-8100</p>
         </div>
         <div id="serra" class="city-adress">
-          <p class="text-white text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed suscipit augue odio.</p>
-          <p class="text-white text-center">Email: vitoriawagen@grupolider.com.br</p>
-            <p class="text-white text-center">Tel: (27) 3331-8100</p>
+          <p class="text-white text-center">BR-101, 5030 - Planalto de Carapina - CEP: 29162-703 - Serra - ES</p>
+          <p class="text-white text-center">Email: crm.vitoriawagen@grupolider.com.br</p>
+            <p class="text-white text-center">Tel: (27) 3298-3400</p>
+        </div>
+        <div id="guarapari" class="city-adress">
+          <p class="text-white text-center">Av.Jones Dos Santos Neves, S/N - Muquiçaba - CEP: 29214-005 - Guarapari - ES</p>
+          <p class="text-white text-center">Email: crm.vitoriawagen@grupolider.com.br</p>
+            <p class="text-white text-center">Tel: (27) 3361-8400</p>
         </div>
       </div>
       <div class="d-flex flex-row mx-auto ">
-        <a class="btn btn-social-icon btn-facebook">
+        <a href="https://www.facebook.com/Vitoriawagen" class="btn btn-social-icon btn-facebook">
           <i class="fab fa-facebook social-button"></i>
         </a>
-        <a class="btn btn-social-icon btn-instagram">
-          <i class="fab fa-instagram social-button"></i>
+        <a href="https://twitter.com/vitoriawagen" class="btn btn-social-icon btn-twitter">
+          <i class="fab fa-twitter social-button"></i>
+        </a>
+        <a href="https://www.youtube.com/user/Vitoriawagen" class="btn btn-social-icon btn-youtube">
+          <i class="fab fa-youtube social-button"></i>
         </a>
       </div>
     </div>
