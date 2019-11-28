@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Support\Facades\Redirect;
 use Illuminate\Support\Facades\Session;
+use App\Form;
 
 class FormController extends Controller
 {
@@ -16,8 +17,7 @@ class FormController extends Controller
           'nome' => 'string|required',
           'telefone' => 'required',
           'email'	=> 'email|required',
-          'mensagem'	=> 'string|size:10|required'
-
+          'mensagem'	=> 'string|min:10|required'
       ];
 
         $messages = [
@@ -30,7 +30,7 @@ class FormController extends Controller
           'email.email' => 'Formato de e-mail inválido.',
 
           'mensagem.required' => 'O campo mensagem é obrigatório',
-          'mensagem.size' => 'Favor inserir uma mensagem de pelo menos 10 caracteres.',
+          'mensagem.min' => 'Favor inserir uma mensagem de pelo menos 10 caracteres.',
           'mensagem.string' => 'Formato de mensagem inválido.',
 
       ];
@@ -38,10 +38,13 @@ class FormController extends Controller
         $validator = Validator::make($request->all(), $rules, $messages);
 
         if ($validator->fails()) {
-            flash('Welcome Aboard!');
             return response()->json(['status' => 'error', 'msg' => $validator->errors()]);
         }
-        flash('Welcome Aboard!');
-        return response()->json(['status' => 'success', 'msg' => [['msg' => 'Crm armazenado com sucesso']]]);
+
+        if (!Form::create($request->all())) {
+            return response()->json(['status' => 'error', 'msg' => [['msg' => 'Falha ao processar sua solicitação, favor tente novamente.']]]);
+        }
+
+        return response()->json(['status' => 'success', 'msg' => [['msg' => 'Solicitação realizada com sucesso.']]]);
     }
 }

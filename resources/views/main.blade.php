@@ -23,7 +23,7 @@
     </div>
     <div class="d-flex w-100 color-dark-blue">
       <div class="btn-group mx-auto">
-        <button class="btn btn-primary color-dark-blue" type="button" name="button" onclick="switchDiv('box-car', 'palo')">Novo Polo</button>
+        <button class="btn btn-primary color-dark-blue" type="button" name="button" onclick="switchDiv('box-car', 'polo')">Novo Polo</button>
         <button class="btn btn-primary color-dark-blue" type="button" name="button" onclick="switchDiv('box-car', 'up')">Up!</button>
       </div>
     </div>
@@ -31,7 +31,7 @@
 
   <body>
     <div class="d-flex flex-row content">
-      <div class="box-car" id="palo">
+      <div class="box-car" id="polo">
         <div class="d-flex flex-column">
           <div class="d-flex flex-row mx-auto mt-4 size-325">
             <div class="box-info">

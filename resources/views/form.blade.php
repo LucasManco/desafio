@@ -11,6 +11,8 @@
             <textarea class="form-control m-2" name="mensagem" id="mensagem" rows="5" cols="40" placeholder="mensagem"></textarea>
         </div>
     </div>
+    <input type="hidden" name="modelo" id="modelo" value="">
+    <input type="hidden" name="cidade" id="cidade" value="">
     <div class="button-box">
         <button class="btn m-2" name="button" type="submit" form="form" value="Submit">GARANTA AGORA</button>
     </div>
