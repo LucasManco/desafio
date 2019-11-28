@@ -92,14 +92,14 @@
         @include('form')
       </div>
     </div>
+  </body>
+  <footer class="page-footer font-small blue pt-4">
     <div class="color-dark-blue ">
       <p class="text-white w-50 mx-auto font-small py-3">
         Imagens Ilustrativas. Novo Polo 1.0 MPI - preto - a partir de R$ 49.990,00 - condição de taxa de 0% válida exclusivamente para modelos 1.0 MPI e 1.6 MSI com entrada de 90% e saldo em 12 meses. Promoção válida até 28/02/2018 ou
         enquanto durar o estoque.
       </p>
     </div>
-  </body>
-  <footer>
     <div class="d-flex">
       <img src="images\rodape.png" class="mx-auto" alt="">
     </div>

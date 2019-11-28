@@ -15,7 +15,7 @@ cd desafio
 composer install
 ```
 
-2) Em seguida na pasta raiz do projeto deve-se editar o arquivo .env especificamente o trecho abaixo com os dados do banco de dados.
+3) Em seguida na pasta raiz do projeto deve-se editar o arquivo .env especificamente o trecho abaixo com os dados do banco de dados.
 ```
 DB_CONNECTION=mysql
 DB_HOST=127.0.0.1
@@ -25,12 +25,12 @@ DB_USERNAME=root
 DB_PASSWORD=
 ```
 
-3) Feito isto iremos criar no banco de dados a tabela executando o seguinte comando na pasta do projeto.
+4) Feito isto iremos criar no banco de dados a tabela executando o seguinte comando na pasta do projeto.
 ```
 php artisan migrate
 ```
 
-4) Para finalizar, execute o projeto com o comando a seguir:
+5) Para finalizar, execute o projeto com o comando a seguir:
 ```
 php artisan serve
 ```
